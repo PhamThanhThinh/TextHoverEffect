@@ -2,6 +2,45 @@
 <html>
 <head>
     <title>Text Hover Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000C18;
+        }
+        .wrap {
+            width: 200px;
+            height: 85px;
+            background: linear-gradient( 70deg, transparent, transparent 40%, #E93892 );
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .content {
+            color: #000C18;
+            line-height: 0.8;
+            text-align: right;
+            font-family: "Courier New";
+            font-size: 30px;
+            margin-top: 10px;
+            margin-right: 5px;
+            transition: 2s ease;
+            opacity: 0;
+        }
+        .full__name {
+            font-size: 10px;
+        }
+        .wrap:hover .content {
+            transform: translateY(-5px);
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <div class="wrap">
@@ -11,6 +50,10 @@
                 <br />
                 <b>Pham</b>
             </div>
+            <div class="full__name">
+                pham thanh thinh
+            </div>
+            <div>2022</div>
         </div>
     </div>
 </body>
